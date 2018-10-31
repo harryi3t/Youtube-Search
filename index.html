@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+  
+       <link rel="stylesheet" href="style.css" type="text/css"/>
+        <title>Postman YouTube Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="topbar">
+            <input type="text" name="search" id="query" placeholder="Search..">
+            <button id="search-button" onclick="search()"></button>
+            <div class="dropdown">
+                <button onclick="filter()" class="filterbtn">Filter</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div id ="sortdiv">
+                        <h5>  <label>Sort By</label></h5>
+                             <label class="sort-container">Default
+                                 <input type="radio" checked="checked" name="radio1" onclick="onSortByDefault()">
+                                 <span class="checkmark"></span>
+                            </label>
+                            <label class="sort-container">Name
+                                 <input type="radio" name="radio1" onclick="onSortByName()">
+                                 <span class="checkmark"></span>
+                            </label>
+                            <label class="sort-container">Date
+                                 <input type="radio" name="radio1" onclick="onSortByDate()">
+                                 <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div id ="orderdiv">
+                        <h5><label>Order By</label></h5>
+                            <label class="order-container">Ascending
+                                <input type="radio" checked="checked" name="radio2" onclick="selectAscending()">
+                                 <span class="checkmark"></span>
+                            </label>
+                            <label class="order-container">Descending 
+                                 <input type="radio" name="radio2" onclick="selectDescending()">
+                                 <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+        <div id = "search-container"></div>
+        <div id="pageSwap"></div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="search.js"></script>
+        
+    </body>
+</html>

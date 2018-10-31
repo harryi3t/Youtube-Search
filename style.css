@@ -1,0 +1,125 @@
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('youtube.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+body{
+    width : 70%;
+}
+#search-button {
+    background-color: transparent; /* Blue background */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url('search-engine (1).png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 26px 20px 17px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    cursor: pointer; /* Mouse pointer on hover */
+}
+.filterbtn{
+    float:right;
+}
+/* Darker background on mouse-over */
+#search-button:hover {
+    background-color: RoyalBlue;
+}
+#search-container{
+    padding:10px 0;
+    border-bottom: 1px #ccc dotted;
+    list-style: none;
+    overflow: auto;
+}
+.imgresult{
+    float : left;
+    width : 20%;
+    
+}
+#next-button{
+    float: right;
+}
+#prev-button{
+    float:left;
+}
+.button-class{
+    background-color: #f4f4f4;
+    padding : 8px 13px;
+    border : #ccc 1px solid;
+    border-radius: 5px;
+    color: #333;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.button-class:hover {
+    background-color: RoyalBlue;
+}
+.imgresult img{
+    width: 100%;
+    padding: 3px;
+    border: solid #ccc 1px;
+}
+.textresult{
+    float : right;
+    width : 78%;
+}
+.channelTitle{
+    color:#dd2826;
+}
+.clearfix{
+    clear:both;
+}
+input[type=text]:focus {
+    width: 85%;
+}
+.filterbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.filterbtn:hover, .filterbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    left: 70px;
+    z-index: 1;
+    overflow:auto
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
